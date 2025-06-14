@@ -4,7 +4,7 @@ plot(mydata$xdata,mydata$ydata,col='red')
 # some guesses for the parameters.
 p1 = 1
 p2 = 0.2
-
+# change sth so I can update
 # do the fit
 fit = nls(ydata ~ p1*cos(p2*xdata) + p2*sin(p1*xdata), data = mydata, start = list(p1=p1,p2=p2))
 
